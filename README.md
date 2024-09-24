@@ -84,6 +84,10 @@ Represents a link for pagination.
 
 0. Clone the repository:
 
+  ```bash
+  git clone git@github.com:reinaldoper/olympics-games.git
+  ```
+
 1. Install dependencies:
 
   ```bash
