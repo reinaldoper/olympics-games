@@ -1,0 +1,134 @@
+/* Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #121212; /* Fundo mais escuro */
+  background-image: url('/src/assets/olimpics.webp'); /* Imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Para a imagem ficar fixa */
+  color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fb5d2d; /* Cor dourada para remeter ao ouro olímpico */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombras para destacar o texto */
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #f4f4f4;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+h2:hover {
+  color: #fb5d2d;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Seções clicáveis */
+.select {
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  color: #121212;
+}
+
+.select:hover {
+  transform: scale(1.05);
+}
+
+.events {
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0.5); /* Fundo transparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  min-width: 300px;
+  max-width: 700px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+/* Títulos */
+p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #f4f1f7;
+}
+
+/* Loading */
+h1 {
+  font-size: 10rem;
+  color: #ff6f61;
+}
+
+a {
+  list-style: none;
+}
+
+/* Adicionando uma imagem temática no topo */
+.header-olympics {
+  background-image: url('/src/assets/man.webp'); /* Imagem que remete às Olimpíadas */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.render-venues{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 8px;
+  color: #f4f4f4;
+  background-color: #806157;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .select {
+    width: 90%;
+  }
+
+  .events {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
