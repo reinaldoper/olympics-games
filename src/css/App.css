@@ -116,6 +116,25 @@ a {
   border-radius: 2px;
 }
 
+.render-events {
+  display: flex;
+  margin-bottom: 8px;
+  color: #f4f4f4;
+  background-color: #806157;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.render-competitors{
+  display: flex;
+  margin-bottom: 8px;
+  margin: auto;
+}
+
+.flag {
+  margin-left: 5px;
+}
+
 /* Media Queries para responsividade */
 @media (max-width: 768px) {
   .container {

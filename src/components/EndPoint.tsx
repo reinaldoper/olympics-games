@@ -79,11 +79,18 @@ const EndPoint = ({ url }: { url: string | undefined }) => {
         return (
           <div>
             {dataEvent ? dataEvent.data.map((item) => (
-              <div className="render-venues" key={item.id}>
-                <p>{item.discipline_name}</p>
-                <p>{item.venue_name}</p>
-                {item.competitors.map((competitor) =>(
-                  <p key={competitor.country_id}>{competitor.competitor_name}</p>
+              <div className="render-events" key={item.id}>
+                <div>
+                  <p>{item.discipline_name}</p>
+                  <p>{item.venue_name}</p>
+                  <img src={item.discipline_pictogram} alt={item.discipline_name} />
+                </div>
+                {item.competitors.map((competitor) => (
+                  <div className="render-competitors" key={competitor.country_id}>
+                    <p>{competitor.competitor_name} - {competitor.result_mark}</p>
+                    <img className="flag" src={competitor.country_flag_url} alt={competitor.country_id} />
+                  </div>
+
                 ))}
               </div>
             )) : <h1>Events</h1>}

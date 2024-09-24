@@ -4,6 +4,8 @@
 
 This project is a frontend application that consumes data from an Olympic Games API. It displays a list of Olympic events, including details such as event name, venue, discipline, and competitor information. The application also supports pagination for navigating through the events.
 
+- [OlympicsGamesApi](https://apis-docs.codante.io/olympic-games)
+
 ## Features
 
 - Display of Olympic event details:
