@@ -46,7 +46,9 @@ const EndPoint = ({ url }: { url: string | undefined }) => {
             {dataDisciplines ? dataDisciplines.data.map((item) => (
               <div className="render-venues" key={item.id}>
                 <p>{item.name}</p>
-                <img src={item.pictogram_url.length ? item.pictogram_url : image} alt={item.name} />
+                <img src={item.pictogram_url === 'https://assets.codante.io/codante-apis/olympic-games/pictograms/FBB.avif' ||
+                  item.pictogram_url === 'https://assets.codante.io/codante-apis/olympic-games/pictograms/BOC.avif'
+                  || item.pictogram_url === 'https://assets.codante.io/codante-apis/olympic-games/pictograms/GBL.avif' ? image : item.pictogram_url} alt={item.name} />
               </div>
             )) : <h1>Disciplines</h1>}
           </div>
