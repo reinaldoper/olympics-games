@@ -68,10 +68,11 @@ const EndPoint = ({ url }: { url: string | undefined }) => {
         return (
           <div>
             {dataCountry ? dataCountry.data.map((item) => (
-              <div className="render-venues" key={item.id}>
+              <div className="render-country" key={item.id}>
                 <p>{item.name}</p>
                 <p>Pos: {item.rank}</p>
                 <p>Tot: {item.total_medals}</p>
+                <p>Ven: {item.continent}</p>
                 <img src={item.flag_url} alt="" />
               </div>
             )) : <h1>Countries</h1>}
